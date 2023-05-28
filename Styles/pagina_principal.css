@@ -1,0 +1,87 @@
+*{
+	box-sizing: border-box; /* Decide el tamaño de las cajitas, puede tener 2 valores. Border box hace que el total de la caja sea lo que yo diga, mientras que box sizing hace que aparte del contenido se le suma la caja */
+}
+
+body{
+	margin: 0;				/* Le puse margin 0 porque sino dejaba un borde encima del header y esas cosas que quedan feo */
+}
+
+
+.container {
+	max-width: 1400px;	/* Una vez se pase de 1400 pixeles se ira centrando (poniendo margenes automaticos) para que no se pegue al borde*/
+	margin: auto;
+}
+
+/*****         HEADER         *****/
+
+header{
+	background-color: grey;
+}
+
+header .logo{
+	margin: 0;						/* El margin es de la letra de bad brains, esta a 0 para lo mismo que en el body */
+	padding: 25px;				/* El padding lo centra y hace que no esté pegado a los bordes, pero sin hacer que el header tengo un hueco por arriba */
+	display: flex;				/* Display determina como se relacionan elementos, en este caso row para que la imagen y el texto estén de seguido */
+	flex-direction: row;	
+	padding-bottom: 10px;
+}
+
+header .container{
+	display: flex;					
+	flex-direction: column;
+	align-items: center;
+}
+
+header nav{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding: 10px;
+}
+
+header a{
+	padding: 5px 10px;
+}
+
+header a:hover{
+	color: darkred;
+}
+
+/*****           FOOTER           *****/
+footer{
+	background-color: pink;
+	padding: 15px;
+}
+
+footer p{
+	font-size: 0.75em;
+	margin-bottom: 0px;
+}
+
+
+
+
+/*****       Versión para ordenadores      *****/
+
+@media (min-width: 720px){
+
+/*****      Header      *****/
+
+	header .container{
+		flex-direction: row;						/* Lo ponemos todo en línea */
+		justify-content: space-between; /* Separa los elementos que hay */
+	}
+
+	header nav{
+		flex-direction: row;
+		text-align: center;
+		padding: 15px;
+
+	}
+
+	header .logo{									/* Ajustamos el padding para que concuerde con el nav, sino se quedan a alturas diferentes */
+		padding: 15px;
+	}
+
+
+}
