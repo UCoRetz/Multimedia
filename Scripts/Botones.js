@@ -11,4 +11,10 @@ btn.addEventListener('click', (e) =>{
 
 });
 
-
+window.addEventListener('resize', () => {
+  if (window.innerWidth >= 720) {
+    menu.style.display = "flex";
+  } else{
+  	menu.style.display = "none"
+  }
+});
