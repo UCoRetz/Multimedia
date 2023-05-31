@@ -108,7 +108,6 @@ header #menu{
 	height: auto;
 }
 
-
 #preguntas_frecuentes{
 	border-radius: 8px;
 	background-color: #304E2C;
@@ -132,7 +131,7 @@ header #menu{
 
 #sobre_nosotros{
 	border-radius: 8px;
-	background-color: #FFFFFF;
+	background-color: #8AA488;
 }
 
 .sobre_nosotros_contenido{
@@ -141,4 +140,29 @@ header #menu{
 	margin-inline: 200px;
 	margin-bottom: 25px;
 }
+
+details { 
+  background-color: #f6f8fa;
+  width: 70%;
+  margin-bottom: 1rem;   
+  border-radius: 8px;  
+  border: 1px solid #d8e0e9;
+  color: #364f6b;
+  position: relative; 
+}
+
+  details summary {  
+  font-weight: 100;
+  font-size: 1.25rem;
+  padding: 1rem;
+  cursor: pointer;
+  list-style: none;
+}
+
+details p {
+  padding: 0.5rem;
+  margin: 0 1rem 1rem 1rem;
+  background: #f6f8fa;
+  border-left: 2px solid #364f6b;
+  }
 }
