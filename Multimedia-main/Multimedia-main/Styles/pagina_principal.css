@@ -1,0 +1,111 @@
+*{
+	box-sizing: border-box; /* Decide el tamaño de las cajitas, puede tener 2 valores. Border box hace que el total de la caja sea lo que yo diga, mientras que box sizing hace que aparte del contenido se le suma la caja */
+}
+
+body{
+	margin: 0;				/* Le puse margin 0 porque sino dejaba un borde encima del header y esas cosas que quedan feo */
+}
+
+
+.container {
+	max-width: 1400px;	/* Una vez se pase de 1400 pixeles se ira centrando (poniendo margenes automaticos) para que no se pegue al borde*/
+	margin: auto;
+}
+
+/*****         HEADER         *****/
+
+header{
+	position: fixed;
+	width: 100%;
+	background-color: rgba(0, 0, 26, 0.9);
+}
+
+header .container{
+	display: flex;					
+	flex-direction: column;
+}
+
+header .barra{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+}
+
+header .logo{
+	display: flex;				/* Display determina como se relacionan elementos, en este caso row para que la imagen y el texto estén de seguido */
+	flex-direction: row;	
+	padding: 25px;				/* El padding lo centra y hace que no esté pegado a los bordes, pero sin hacer que el header tengo un hueco por arriba */
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: rgb(240, 240, 240);
+}
+
+header .imagen{
+	height: 50px;
+	width: 50px;
+}
+
+header #hamburguesa{
+	margin-top: 10px;
+	margin-right: 10px;
+}
+
+header nav{						
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding: 10px;
+	background-color: rgb(0, 0, 26);
+	height: 100vh;
+}
+
+header a{
+	padding: 5px 10px;
+	text-decoration: none;
+	color: rgb(240, 240, 240);
+}
+
+header a:hover{
+	color: darkred;
+}
+
+/*****           FOOTER           *****/
+footer{
+	background-color: pink;
+	padding: 15px;
+}
+
+footer p{
+	font-size: 0.75em;
+	margin-bottom: 0px;
+}
+
+
+/*****       Versión para ordenadores      *****/
+
+@media (min-width: 720px){
+
+/*****      Header      *****/
+
+#hamburguesa {
+	display: none;
+}
+
+header .container{
+	display: flex;					
+	flex-direction: row-reverse;
+	align-items: center;
+	justify-content: space-between;
+}
+
+header #menu{
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+	padding: 10px;
+	background-color: transparent;
+	height: auto;
+}
+
+}
