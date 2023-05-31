@@ -108,4 +108,39 @@ header #menu{
 	height: auto;
 }
 
+/***** Preguntas Frecuentes *****/
+
+#preguntas_frecuentes{
+	border-radius: 8px;
+	background-color: #304E2C;
+	padding-bottom: 8px;
+}
+
+.preguntas_frecuentes_contenido{
+	box-sizing: border-box;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+	
+.preguntas_bloque{
+	width: 500px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	width:100%;
+}
+
+#sobre_nosotros{
+	border-radius: 8px;
+	background-color: #8AA488;
+}
+
+.sobre_nosotros_contenido{
+	display: inline-flex;
+	justify-content: center;
+	margin-inline: 200px;
+	margin-bottom: 25px;
+}
+
 }
