@@ -15,32 +15,55 @@ body{
 /*****         HEADER         *****/
 
 header{
-	background-color: grey;
-}
-
-header .logo{
-	margin: 0;						/* El margin es de la letra de bad brains, esta a 0 para lo mismo que en el body */
-	padding: 25px;				/* El padding lo centra y hace que no esté pegado a los bordes, pero sin hacer que el header tengo un hueco por arriba */
-	display: flex;				/* Display determina como se relacionan elementos, en este caso row para que la imagen y el texto estén de seguido */
-	flex-direction: row;	
-	padding-bottom: 10px;
+	position: fixed;
+	width: 100%;
+	background-color: rgba(0, 0, 26, 0.9);
 }
 
 header .container{
 	display: flex;					
 	flex-direction: column;
-	align-items: center;
 }
 
-header nav{
+header .barra{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+}
+
+header .logo{
+	display: flex;				/* Display determina como se relacionan elementos, en este caso row para que la imagen y el texto estén de seguido */
+	flex-direction: row;	
+	padding: 25px;				/* El padding lo centra y hace que no esté pegado a los bordes, pero sin hacer que el header tengo un hueco por arriba */
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: rgb(240, 240, 240);
+}
+
+header .imagen{
+	height: 50px;
+	width: 50px;
+}
+
+header #hamburguesa{
+	margin-top: 10px;
+	margin-right: 10px;
+}
+
+header nav{						
 	display: flex;
 	flex-direction: column;
 	text-align: center;
 	padding: 10px;
+	background-color: rgb(0, 0, 26);
+	height: 100vh;
 }
 
 header a{
 	padding: 5px 10px;
+	text-decoration: none;
+	color: rgb(240, 240, 240);
 }
 
 header a:hover{
@@ -59,29 +82,30 @@ footer p{
 }
 
 
-
-
 /*****       Versión para ordenadores      *****/
 
 @media (min-width: 720px){
 
 /*****      Header      *****/
 
-	header .container{
-		flex-direction: row;						/* Lo ponemos todo en línea */
-		justify-content: space-between; /* Separa los elementos que hay */
-	}
+#hamburguesa {
+	display: none;
+}
 
-	header nav{
-		flex-direction: row;
-		text-align: center;
-		padding: 15px;
+header .container{
+	display: flex;					
+	flex-direction: row-reverse;
+	align-items: center;
+	justify-content: space-between;
+}
 
-	}
-
-	header .logo{									/* Ajustamos el padding para que concuerde con el nav, sino se quedan a alturas diferentes */
-		padding: 15px;
-	}
-
+header #menu{
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+	padding: 10px;
+	background-color: transparent;
+	height: auto;
+}
 
 }
