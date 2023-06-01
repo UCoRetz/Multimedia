@@ -6,6 +6,11 @@ body{
 	margin: 0;				/* Le puse margin 0 porque sino dejaba un borde encima del header y esas cosas que quedan feo */
 }
 
+section{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
 
 .container {
 	max-width: 1400px;	/* Una vez se pase de 1400 pixeles se ira centrando (poniendo margenes automaticos) para que no se pegue al borde*/
@@ -18,6 +23,7 @@ header{
 	position: fixed;
 	width: 100%;
 	background-color: rgba(0, 0, 26, 0.9);
+	z-index: 1;
 }
 
 header .container{
@@ -70,6 +76,76 @@ header a:hover{
 	color: darkred;
 }
 
+
+/*** FAQ ***/
+
+#preguntas_frecuentes{ /*Contorno*/
+	border-radius: 8px;
+	padding-bottom: 8px;
+	padding-top: 10px;
+	background-color: #304E2C;
+}
+
+.preguntas_frecuentes_contenido{ /*Disposicion de los bloques*/
+	margin-top: 20px;
+	margin-bottom: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	box-sizing: border-box;
+	width: 100%;
+}
+	
+.preguntas_bloque{ /*Contenido*/
+	display: flex;
+  width: 70%;
+  margin-bottom: 1rem;   
+  border-radius: 8px;  
+  border: 1px solid #d8e0e9;
+  color: #364f6b;
+  background-color: #f6f8fa;
+
+}
+
+  details summary {  
+  font-weight: 100;
+  font-size: 1.25rem;
+  padding: 1rem;
+  cursor: pointer;
+  list-style: none;
+  text-align: center;
+
+}
+
+details p {
+  padding: 0.5rem;
+  margin: 0px 1rem 1rem 1rem;
+  background: #f6f8fa;
+  border-left: 2px solid #364f6b;
+  text-align: justify;
+  }
+
+
+/***Sobre Nosotros***/
+
+#sobre_nosotros{
+
+	padding-top: 10px ;
+	border-radius: 8px;
+	background-color: #8AA488;
+}
+
+.sobre_nosotros_contenido{
+	display: inline-flex;
+	justify-content: center;
+	margin-inline: 75px;
+	margin-bottom: 25px;
+	text-align: justify;
+}
+
+
+
+
 /*****           FOOTER           *****/
 footer{
 	background-color: pink;
@@ -93,7 +169,7 @@ footer p{
 }
 
 header .container{
-	display: flex;					
+	display: flex;
 	flex-direction: row-reverse;
 	align-items: center;
 	justify-content: space-between;
