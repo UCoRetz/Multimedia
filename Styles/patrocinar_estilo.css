@@ -1,0 +1,21 @@
+ #container_card {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los bloques se envuelvan cuando el ancho de la pantalla es insuficiente */
+  }
+  
+  .card {
+    width: 100%; /* Ocupa todo el ancho disponible en dispositivos móviles */
+    background-color: #f1f1f1;
+    margin-bottom: 10px; /* Espacio entre bloques */
+    margin-top: 10px;
+  }
+  
+  @media (min-width: 720px) { /* A partir de 768px de ancho (dispositivos de escritorio) */
+    .card {
+       max-width: 1400px; 
+      width: calc(33.33% - 20px); /* Ancho del bloque (33.33%) menos el espacio entre bloques (20px) */
+      margin: auto; /* Espacio horizontal entre bloques */
+      margin-bottom: 10px; /* Espacio vertical entre bloques */
+      margin-top: 10px;
+    }
+  }
