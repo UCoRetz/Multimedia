@@ -2,6 +2,14 @@
 	box-sizing: border-box; /* Decide el tamaño de las cajitas, puede tener 2 valores. Border box hace que el total de la caja sea lo que yo diga, mientras que box sizing hace que aparte del contenido se le suma la caja */
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+h3 {
+  font-family: "Press Start 2P", cursive;
+  color: #F0E9D2;
+  font-size: 30px;
+}
+
 body{
 	margin: 0;				/* Le puse margin 0 porque sino dejaba un borde encima del header y esas cosas que quedan feo */
 }
