@@ -83,6 +83,10 @@ h3{
 	font-size: 30px;
 }
 
+h4{
+	color:  #F0E9D2;
+	font-size: 20px;
+}
 
 
 /*** FAQ ***/
@@ -150,6 +154,61 @@ details p {
 	margin-bottom: 25px;
 	text-align: justify;
 }
+
+/***Sobre Nosotros 2***/
+
+#sobre_nosotros2{
+
+	padding-top: 10px ;
+	border-radius: 8px;
+	background-color: #678983;
+}
+
+.container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    .about-us {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    
+    .about-us img {
+      width: 200px;
+      height: auto; 
+    }
+
+    
+    @media only screen and (max-width: 600px) {
+      .about-us img {
+        width: 150px;
+      }
+    }
+    
+    .description {
+      margin-bottom: 20px;
+    }
+    
+    .team-members {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    
+    .team-member {
+      width: 300px;
+      margin: 10px;
+      text-align: center;
+    }
+    
+    .team-member img {
+      width: 150px;
+      height: auto;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
 
 /***Comentarios***/
 
