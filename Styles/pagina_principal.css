@@ -2,6 +2,24 @@
 	box-sizing: border-box; /* Decide el tamaño de las cajitas, puede tener 2 valores. Border box hace que el total de la caja sea lo que yo diga, mientras que box sizing hace que aparte del contenido se le suma la caja */
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+@font-face {
+    font-family: "Upheaval";
+    src: url('fonts/Upheaval.ttf') format('truetype');
+}
+
+h3 {
+  font-family: "Upheaval";
+  color: #F0E9D2;
+  font-size: 30px;
+}
+
+h4{
+	color: #678983;
+	font-size: 20px;
+}
+
 body{
 	margin: 0;				/* Le puse margin 0 porque sino dejaba un borde encima del header y esas cosas que quedan feo */
 }
@@ -78,15 +96,7 @@ header a:hover{
 	color: #678983;
 }
 
-h3{
-	color:  #F0E9D2;
-	font-size: 30px;
-}
 
-h4{
-	color:  #F0E9D2;
-	font-size: 20px;
-}
 
 
 /*** FAQ ***/
@@ -138,37 +148,69 @@ details p {
   }
 
 
+/***Imagenes carousel***/
+#capturas_juego {
+  background-color: #678983;
+}
+.gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery img {
+  display: none;
+}
+
+.gallery img:first-child {
+  display: block;
+}
+
+.gallery img.active {
+  display: block;
+}
+
+@keyframes slideshow {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 /***Sobre Nosotros***/
 
-#sobre_nosotros{
+	#sobre_nosotros{
+		padding-top: 10px ;
+		border-radius: 8px;
+		background-color: #F0E9D2;
+	}
 
-	padding-top: 10px ;
-	border-radius: 8px;
-	background-color: #678983;
-}
-
-.sobre_nosotros_contenido{
-	display: inline-flex;
-	justify-content: center;
-	margin-inline: 75px;
-	margin-bottom: 25px;
-	text-align: justify;
-}
-
-/***Sobre Nosotros 2***/
-
-#sobre_nosotros2{
-
-	padding-top: 10px ;
-	border-radius: 8px;
-	background-color: #678983;
-}
-
-.container {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 20px;
+	#sobre_nosotros h3{
+      color: #678983;
     }
+
+    #sobre_nosotros .container{
+		margin-left:20%;
+		margin-right:20%;
+		margin-bottom:3%;
+		text-align: center;
+
+	}
+
     
     .about-us {
       text-align: center;
@@ -176,22 +218,14 @@ details p {
     }
     
     .about-us img {
-      width: 200px;
-      height: auto; 
+		margin-top:20%;
+		margin-left: 20%;
+        width: 200px;
+        height: auto; 
+        
     }
 
-    
-    @media only screen and (max-width: 600px) {
-      .about-us img {
-        width: 150px;
-      }
-    }
-    
-    .description {
-      margin-bottom: 20px;
-    }
-    
-    .team-members {
+    .team-members-container {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
@@ -209,6 +243,7 @@ details p {
       border-radius: 50%;
       margin-bottom: 10px;
     }
+
 
 /***Comentarios***/
 
