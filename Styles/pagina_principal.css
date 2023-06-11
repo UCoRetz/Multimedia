@@ -41,6 +41,13 @@ section{
 	align-items: center;
 }
 
+button:hover{
+	cursor: pointer;
+}
+
+button:active{
+	transform: scale(0.98);
+}
 
 .container {
 	max-width: 1400px;	/* Una vez se pase de 1400 pixeles se ira centrando (poniendo margenes automaticos) para que no se pegue al borde*/
@@ -88,7 +95,7 @@ header #hamburguesa{
 }
 
 header nav{						
-	display: flex;
+	display: none	;
 	flex-direction: column;
 	text-align: center;
 	padding: 10px;
@@ -142,7 +149,38 @@ header a:hover{
     text-align: justify;
 }
 
+/*****         INFO         *****/
 
+#info{
+	padding: 20px;
+	background-color: #F0E9D2;
+}
+
+#info p{
+	margin: 5px;
+}
+
+.info_contenido{
+	padding-bottom: 20px;
+	font-size: 25px;
+}
+
+.leyenda{
+	font-size: 15px;
+	color: grey;
+}
+
+#info button{
+	width: 250px;
+	height: 40px;
+
+	border: outset;
+	border-radius: 10px;
+
+	background-color: #304E2C;
+	color: #F0E9D2;
+	font-weight: bold;
+}
 
 /*** FAQ ***/
 
@@ -367,8 +405,7 @@ footer p{
 }
 
 header .container{
-
-	display: flex;
+	display: none;
 	flex-direction: row-reverse;
 	align-items: center;
 	justify-content: space-between;
@@ -383,9 +420,18 @@ header #menu{
 	height: auto;
 }
 
-/*****      Campaña      *****/
-.columnas {
-	display: flex;
+/*****         DATOS PATROCINADORES         *****/
+
+#datos .container {
+	width: 70%;
+  display: flex;
+  flex-direction: row;
+
+	align-items: center;
+	justify-content: space-between;
+
 }
+}
+
 
 }
