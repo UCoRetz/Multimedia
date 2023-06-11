@@ -2,22 +2,27 @@
 	box-sizing: border-box; /* Decide el tamaño de las cajitas, puede tener 2 valores. Border box hace que el total de la caja sea lo que yo diga, mientras que box sizing hace que aparte del contenido se le suma la caja */
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 @font-face {
-    font-family: "Upheaval";
-    src: url('fonts/Upheaval.ttf') format('truetype');
+    font-family: upheaval;
+    src: url('Fonts/upheavtt.ttf');
+}
+
+h2{
+	font-family: 'Press Start 2P', cursive;
+	font-size: 20px;
 }
 
 h3 {
-  font-family: "Upheaval";
+  font-family: 'Press Start 2P', cursive;
   color: #F0E9D2;
   font-size: 30px;
 }
 
 h4{
+	font-family: 'Press Start 2P', cursive;
 	color: #678983;
-	font-size: 20px;
+	font-size: 18px;
 }
 
 body{
@@ -126,6 +131,12 @@ header a:hover{
       color: #333;
     }
 
+.campana_texto{
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: justify;
+}
+
 
 
 /*** FAQ ***/
@@ -180,48 +191,62 @@ details p {
   }
 
 
+/*** Info ***/
+
+#informacion_general{ 
+	background-color: #678983;
+}
+.campana_contenido img {
+  	width: 40%;
+    height: auto;
+    filter: drop-shadow(0px 2px 10px black);
+    margin-bottom: 10px;
+    margin-top: 25px;
+    margin-left: 30%;
+    
+}
+.columnas {
+
+    margin-left: 15%;
+    margin-right: 15%;
+}
+    
+    .column {
+      flex: 1;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    .column h2 {
+      color: #333;
+    }
+
+
 /***Imagenes carousel***/
 #capturas_juego {
-  background-color: #678983;
+  	background-color: #678983;
 }
+
 .gallery {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	margin-bottom: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .gallery img {
-  display: none;
+	display: none;
 }
 
 .gallery img:first-child {
-  display: block;
+	display: block;
 }
 
 .gallery img.active {
-  display: block;
+	display: block;
 }
 
-@keyframes slideshow {
-  0% {
-    opacity: 1;
-  }
-  20% {
-    opacity: 0;
-  }
-  40% {
-    opacity: 0;
-  }
-  60% {
-    opacity: 0;
-  }
-  80% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
+
 
 /***Sobre Nosotros***/
 
