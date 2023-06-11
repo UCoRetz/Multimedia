@@ -3,6 +3,7 @@
 }
 
 
+
 @font-face {
     font-family: upheaval;
     src: url('Fonts/upheavtt.ttf');
@@ -15,15 +16,19 @@ h2{
 
 h3 {
   font-family: 'Press Start 2P', cursive;
+
   color: #F0E9D2;
   font-size: 30px;
 }
+
 
 h4{
 	font-family: 'Press Start 2P', cursive;
 	color: #678983;
 	font-size: 18px;
 }
+
+
 
 body{
 	margin: 0;				/* Le puse margin 0 porque sino dejaba un borde encima del header y esas cosas que quedan feo */
