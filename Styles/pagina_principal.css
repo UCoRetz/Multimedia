@@ -248,17 +248,17 @@ details p {
     margin-left: 30%;
     
 }
-.columnas {
+.columnas_info {
 
     margin-left: 15%;
     margin-right: 15%;
 }
     
-    .column {
-      flex: 1;
-      padding: 20px;
-      text-align: center;
-    }
+.column {
+	flex: 1;
+	padding: 20px;
+	text-align: center;
+}
     
     .column h2 {
       color: #333;
@@ -266,6 +266,7 @@ details p {
 
 
 /***Imagenes carousel***/
+
 #capturas_juego {
   	background-color: #678983;
 }
