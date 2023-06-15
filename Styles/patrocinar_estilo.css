@@ -1,21 +1,96 @@
- #container_card {
-    display: flex;
-    flex-wrap: wrap; /* Permite que los bloques se envuelvan cuando el ancho de la pantalla es insuficiente */
+*{
+	box-sizing: border-box; /* Decide el tamaño de las cajitas, puede tener 2 valores. Border box hace que el total de la caja sea lo que yo diga, mientras que box sizing hace que aparte del contenido se le suma la caja */
+}
+  body{
+  margin: 0;				/* Le puse margin 0 porque sino dejaba un borde encima del header y esas cosas que quedan feo */
+}
+
+  @font-face {
+  font-family: upheaval;
+  src: url('Fonts/upheavtt.ttf');
+}
+
+  h2{
+  font-family: 'Press Start 2P', cursive;
+  font-size: 20px;
   }
   
+  h3 {
+  font-family: 'Press Start 2P', cursive;
+  
+  color: #F0E9D2;
+  font-size: 30px;
+  }
+  
+  
+   h4{
+  font-family: 'Press Start 2P', cursive;
+  color: #678983;
+  font-size: 18px;
+  }
+  
+  li{
+    font-family: 'Press Start 2P', cursive;
+    color: #678983;
+    font-size: 16px;
+    }
+  
+  ul{list-style: none;}
+  button{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow:2px 2px 5px rgba(0, 0, 0, 0.5);;
+    background-color: rgb(245, 245, 245);
+  }  
+  button:hover{
+    background-color: rgb(235, 235, 235);
+  }
+  #recompensas{
+
+  }
+
+  #titulo h1{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 25px;
+    text-align: center;
+  }
+  .container_card {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; /* Permite que los bloques se envuelvan cuando el ancho de la pantalla es insuficiente */
+  }
+
   .card {
     width: 100%; /* Ocupa todo el ancho disponible en dispositivos móviles */
-    background-color: #f1f1f1;
+    background-color: rgb(200, 200, 200);
     margin-bottom: 10px; /* Espacio entre bloques */
     margin-top: 10px;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding: 5px 12px; 
+  }
+  .card h2{
+    padding: 5px 12px;
+  }
+  .card button{
+    
   }
   
-  @media (min-width: 720px) { /* A partir de 768px de ancho (dispositivos de escritorio) */
+  @media (min-width: 720px) { /* A partir de 720px de ancho (dispositivos de escritorio) */
     .card {
-       max-width: 1400px; 
+      max-width: 500px; 
       width: calc(33.33% - 20px); /* Ancho del bloque (33.33%) menos el espacio entre bloques (20px) */
       margin: auto; /* Espacio horizontal entre bloques */
       margin-bottom: 10px; /* Espacio vertical entre bloques */
       margin-top: 10px;
+      
+    }
+    #container_card{
+      max-width: 1400px;
     }
   }
