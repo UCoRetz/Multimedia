@@ -3,13 +3,13 @@ const recaudacion_base=2349;
 
 var pagado = 0;
 var audio = new Audio('Sounds/good.mp3');
-var recaudacion = document.getElementById("recaudacion");
+//var recaudacion = document.getElementById("recaudacion");
 
 function actualizar(dinero){
 	pagado = dinero + parseInt(document.cookie.split('=')[1]);
 	document.cookie = "dinero=" + pagado + "; expires:" + fecha_max + ";";
 	console.log(document.cookie);
-	recaudacion.textContent = (recaudacion_base + parseInt(document.cookie.split('=')[1]));
+	//recaudacion.textContent = (recaudacion_base + parseInt(document.cookie.split('=')[1]));
 }
 
 var btn_5 = document.getElementById('btn_5');

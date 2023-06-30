@@ -3,7 +3,6 @@ document.querySelector(".enlace_patrocinar").addEventListener("click", function(
 	window.location.href = "patrocinar.html";	
 })
 
-const reaudacion_base=2349;
 const patrocinadores_base=68;
 const advertencia="Esta pagina utiliza cookies, ¿quieres galletas?";
 
