@@ -40,5 +40,4 @@ quedan = quedan / (1000 * 60 * 60 * 24);					// quedan / 1000 es el resultado en
 															// y /24 porque el dia tiene 24h, así tenemos el resultado en segundos
 dias_restantes.textContent = Math.ceil(quedan) + " dias"; 	// redondeamos hacia abajo
 
-*/
 
