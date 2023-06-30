@@ -20,7 +20,4 @@ window.addEventListener('resize', () => {
   }
 });
 
-document.querySelector(".enlace_patrocinar").addEventListener("click", function(){
-	window.location.href = "Patrocinar.html";	
-})
 
