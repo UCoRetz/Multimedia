@@ -1,0 +1,324 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+}
+
+@font-face {
+    font-family: upheaval;
+    src: url('Fonts/upheavtt.ttf');
+}
+
+h1 {
+    font-size: 3.5em;
+}
+
+h2 {
+    font-size: 2em;
+    font-family: 'Press Start 2P', cursive;
+
+}
+
+h3 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2em;
+
+    color: #F0E9D2;
+
+}
+
+
+h4 {
+    font-family: 'Press Start 2P', cursive;
+    color: #678983;
+    font-size: 18px;
+}
+
+li {
+    font-family: 'Press Start 2P', cursive;
+    color: #678983;
+    font-size: 1.2em;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    ;
+    background-color: rgb(245, 245, 245);
+}
+
+p {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.8em;
+    color: black;
+    margin-top: 5em;
+}
+
+
+
+
+
+button:hover {
+    background-color: rgb(101, 33, 165);
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-acento {
+    color: blueviolet;
+}
+
+header {
+    background-color: rgb(245, 245, 245);
+
+}
+
+header .logo {
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: blueviolet;
+    font-size: 1.6em;
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a {
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover {
+    color: blueviolet;
+}
+
+#recompensas {
+    background-color: rgb(30, 30, 30);
+    color: white;
+    text-align: center;
+}
+
+#recompensas .container {
+    padding: 150px 12px;
+}
+
+#recompensas h2 {
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#recompensas p {
+    display: none;
+}
+
+#recompensas .carta {
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 30px;
+    border-radius: 15px;
+}
+
+.carta:first-child {
+    background-image: linear-gradient(0deg,
+            rgba(240, 233, 210, 1),
+            rgba(103, 137, 131, 1)), url("media/front-end.jpg");
+
+}
+
+.carta:nth-child(2) {
+    background-image: linear-gradient(0deg,
+            rgba(240, 233, 210, 1),
+            rgba(103, 137, 131, 1)), url("media/full-stack.jpg");
+}
+
+.carta:nth-child(3) {
+    background-image: linear-gradient(0deg,
+            rgba(240, 233, 210, 1),
+            rgba(103, 137, 131, 1)), url("media/python.jpg");
+
+}
+
+#caracteristicas .container {
+    text-align: center;
+    padding: 250px 12px;
+}
+
+#caracteristicas li {
+    margin: 16px 0px;
+    font-weight: bold;
+}
+
+#final {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(30, 30, 30);
+    color: white;
+    height: 80vh;
+}
+
+#final h2 {
+    font-size: 9vw;
+}
+
+#final button {
+    font-size: 5vw;
+}
+
+footer {
+    background-color: pink;
+    padding: 15px;
+    margin-bottom: 0;
+}
+
+footer p {
+    margin: 0;
+    padding: 12px;
+    color: rgb(100, 100, 100);
+    font-size: 0.75em;
+    margin-bottom: 0px;
+}
+
+footer .container {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
+
+
+
+@media (min-width: 850px) {
+    header {
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav {
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #recompensas .programas {
+        display: flex;
+        justify-content: center;
+    }
+
+    #recompensas p {
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #recompensas h2 {
+        font-size: 4em;
+    }
+
+    #recompensas h3 {
+        margin-top: 0;
+    }
+
+    #recompensas .carta {
+        padding: 50px;
+        background-size: 100% 150px;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        background-color: rgba(240, 233, 210, 1);
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+
+    }
+
+    .carta:first-child {
+        background-image: linear-gradient(0deg,
+                rgba(103, 137, 131, 1),
+                rgba(103, 137, 131, 1)), url("media/front-end-cropped.jpg");
+
+    }
+
+    .carta:nth-child(2) {
+        background-image: linear-gradient(0deg,
+                rgba(103, 137, 131, 1),
+                rgba(103, 137, 131, 1)), url("media/full-stack-cropped.jpg");
+    }
+
+    .carta:nth-child(3) {
+        background-image: linear-gradient(0deg,
+                rgba(103, 137, 131, 1),
+                rgba(103, 137, 131, 1)), url("media/python-cropped.jpg");
+
+    }
+
+    #caracteristicas {
+        background-image: url("media/background-2.jpeg");
+        background-repeat: no-repeat;
+        background-size: 500px 400px;
+        background-position: calc(100vw - 500px) 120px;
+    }
+
+    #caracteristicas .container {
+        text-align: initial;
+    }
+
+    #caracteristicas ul {
+        margin-left: 100px;
+    }
+
+    #final h2 {
+        font-size: 5em;
+    }
+
+    #final button {
+        font-size: 2em;
+    }
+
+    footer .container {
+        justify-content: flex-end;
+    }
+}
+
+@media (min-width: 1200px) {
+    #caracteristicas {
+        background-position-x: calc(100vw - 800px);
+    }
+}
