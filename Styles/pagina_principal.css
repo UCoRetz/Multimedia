@@ -1,28 +1,29 @@
-*{
-	box-sizing: border-box; /* Decide el tamaño de las cajitas, puede tener 2 valores. Border box hace que el total de la caja sea lo que yo diga, mientras que box sizing hace que aparte del contenido se le suma la caja */
+* {
+	box-sizing: border-box;
+	/* Decide el tamaño de las cajitas, puede tener 2 valores. Border box hace que el total de la caja sea lo que yo diga, mientras que box sizing hace que aparte del contenido se le suma la caja */
 }
 
 
 
 @font-face {
-    font-family: upheaval;
-    src: url('Fonts/upheavtt.ttf');
+	font-family: upheaval;
+	src: url('Fonts/upheavtt.ttf');
 }
 
-h2{
+h2 {
 	font-family: 'Press Start 2P', cursive;
 	font-size: 20px;
 }
 
 h3 {
-  font-family: 'Press Start 2P', cursive;
+	font-family: 'Press Start 2P', cursive;
 
-  color: #F0E9D2;
-  font-size: 30px;
+	color: #F0E9D2;
+	font-size: 30px;
 }
 
 
-h4{
+h4 {
 	font-family: 'Press Start 2P', cursive;
 	color: #678983;
 	font-size: 18px;
@@ -30,72 +31,77 @@ h4{
 
 
 
-body{
-	margin: 0;				/* Le puse margin 0 porque sino dejaba un borde encima del header y esas cosas que quedan feo */
+body {
+	margin: 0;
+	/* Le puse margin 0 porque sino dejaba un borde encima del header y esas cosas que quedan feo */
 }
 
 
-section{
+section {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
 
-button:hover{
+button:hover {
 	cursor: pointer;
 }
 
-button:active{
+button:active {
 	transform: scale(0.98);
 }
 
 .container {
-	max-width: 1400px;	/* Una vez se pase de 1400 pixeles se ira centrando (poniendo margenes automaticos) para que no se pegue al borde*/
+	max-width: 1400px;
+	/* Una vez se pase de 1400 pixeles se ira centrando (poniendo margenes automaticos) para que no se pegue al borde*/
 	margin: auto;
 }
 
 /*****         HEADER         *****/
 
-header{
+header {
 	position: fixed;
 	width: 100%;
-	background-color: rgba(0, 0, 26, 0.9); /*Azul*/
+	background-color: rgba(0, 0, 26, 0.9);
+	/*Azul*/
 	z-index: 1;
 }
 
-header .container{
-	display: flex;					
+header .container {
+	display: flex;
 	flex-direction: column;
 }
 
-header .barra{
+header .barra {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 
 }
 
-header .logo{
-	display: flex;				/* Display determina como se relacionan elementos, en este caso row para que la imagen y el texto estén de seguido */
-	flex-direction: row;	
-	padding: 25px;				/* El padding lo centra y hace que no esté pegado a los bordes, pero sin hacer que el header tengo un hueco por arriba */
+header .logo {
+	display: flex;
+	/* Display determina como se relacionan elementos, en este caso row para que la imagen y el texto estén de seguido */
+	flex-direction: row;
+	padding: 25px;
+	/* El padding lo centra y hace que no esté pegado a los bordes, pero sin hacer que el header tengo un hueco por arriba */
 	padding-top: 5px;
 	padding-bottom: 5px;
 	color: rgb #F0E9D2;
 }
 
-header .imagen{
+header .imagen {
 	height: 50px;
 	width: 50px;
 }
 
-header #hamburguesa{
+header #hamburguesa {
 	margin-top: 10px;
 	margin-right: 10px;
 }
 
-header nav{						
-	display: none	;
+header nav {
+	display: none;
 	flex-direction: column;
 	text-align: center;
 	padding: 10px;
@@ -103,39 +109,68 @@ header nav{
 	height: 100vh;
 }
 
-header a{
+header a {
 	padding: 5px 10px;
 	text-decoration: none;
 	color: #E6DDC4;
 }
 
-header a:hover{
+header a:hover {
 	color: #678983;
 }
 
-/*****         DATOS         *****/
 
-#datos{
+/*****         DATOS         *****/
+#datos .caja_gif {
+	margin-top: 70px;
+	filter: drop-shadow(0px 2px 10px black);
+	margin-bottom: 30px;
+}
+#datos .gif{
+	width: 100%;
+	
+}
+
+#datos .panel_gif {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+	color: #F0E9D2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+}
+
+.panel_gif p {
+	text-align: center;
+	font-size: 20px;
+}
+
+#datos {
 	font-family: 'Press Start 2P', cursive;
 	padding: 20px;
 	background-color: #678983;
 }
 
-#datos p{
+#datos p {
 	margin: 5px;
 }
 
-.datos_contenido{
+.datos_contenido {
 	padding-bottom: 20px;
 	font-size: 25px;
 }
 
-.leyenda{
+.leyenda {
 	font-size: 15px;
 	color: #F0E9D2;
 }
 
-#datos button{
+#datos button {
 	font-family: 'Press Start 2P', cursive;
 
 	width: 250px;
@@ -152,52 +187,56 @@ header a:hover{
 
 /***   Campaña   ***/
 
-#campana{ 
+#campana {
 	background-color: #F0E9D2;
 }
+
 .campana_contenido img {
-  	width: 40%;
-    height: auto;
-    filter: drop-shadow(0px 2px 10px black);
-    margin-bottom: 10px;
-    margin-top: 15px;
-    margin-left: 30%;
-    
+	width: 40%;
+	height: auto;
+	filter: drop-shadow(0px 2px 10px black);
+	margin-bottom: 10px;
+	margin-top: 15px;
+	margin-left: 30%;
+
 }
+
 .columnas {
 
-    margin-left: 15%;
-    margin-right: 15%;
+	margin-left: 15%;
+	margin-right: 15%;
 }
-    
-    .column {
-      flex: 1;
-      padding: 20px;
-      text-align: center;
-    }
-    
-    .column h2 {
-      color: #333;
-    }
 
-.campana_texto{
-    margin-left: 30px;
-    margin-right: 30px;
-    text-align: justify;
+.column {
+	flex: 1;
+	padding: 20px;
+	text-align: center;
+}
+
+.column h2 {
+	color: #333;
+}
+
+.campana_texto {
+	margin-left: 30px;
+	margin-right: 30px;
+	text-align: justify;
 }
 
 
 
 /*** FAQ ***/
 
-#preguntas_frecuentes{ /*Contorno*/
+#preguntas_frecuentes {
+	/*Contorno*/
 	border-radius: 8px;
 	padding-bottom: 8px;
 	padding-top: 10px;
 	background-color: #678983;
 }
 
-.preguntas_frecuentes_contenido{ /*Disposicion de los bloques*/
+.preguntas_frecuentes_contenido {
+	/*Disposicion de los bloques*/
 	margin-top: 20px;
 	margin-bottom: 20px;
 	display: flex;
@@ -206,75 +245,79 @@ header a:hover{
 	box-sizing: border-box;
 	width: 100%;
 }
-	
-.preguntas_bloque{ /*Contenido*/
+
+.preguntas_bloque {
+	/*Contenido*/
 	display: flex;
-  width: 70%;
-  margin-bottom: 1rem;   
-  border-radius: 8px;  
-  border: 1px solid #E6DDC4;
-  color: #364f6b;
-  background-color: #F0E9D2;
+	width: 70%;
+	margin-bottom: 1rem;
+	border-radius: 8px;
+	border: 1px solid #E6DDC4;
+	color: #364f6b;
+	background-color: #F0E9D2;
 }
 
-.pregunta{ /*Contenido*/
+.pregunta {
+	/*Contenido*/
 	color: rgba(0, 0, 26, 1);
 }
 
-  details summary {  
-  font-weight: 100;
-  font-size: 1.25rem;
-  padding: 1rem;
-  cursor: pointer;
-  list-style: none;
-  text-align: center;
+details summary {
+	font-weight: 100;
+	font-size: 1.25rem;
+	padding: 1rem;
+	cursor: pointer;
+	list-style: none;
+	text-align: center;
 
 }
 
 details p {
-  padding: 0.5rem;
-  margin: 0px 1rem 1rem 1rem;
+	padding: 0.5rem;
+	margin: 0px 1rem 1rem 1rem;
 
-  border-left: 2px solid #364f6b;
-  text-align: justify;
-  }
+	border-left: 2px solid #364f6b;
+	text-align: justify;
+}
 
 
 /*** Info ***/
 
-#informacion_general{ 
+#informacion_general {
 	background-color: #678983;
 }
+
 .campana_contenido img {
-  	width: 40%;
-    height: auto;
-    filter: drop-shadow(0px 2px 10px black);
-    margin-bottom: 10px;
-    margin-top: 25px;
-    margin-left: 30%;
-    
+	width: 40%;
+	height: auto;
+	filter: drop-shadow(0px 2px 10px black);
+	margin-bottom: 10px;
+	margin-top: 25px;
+	margin-left: 30%;
+
 }
+
 .columnas_info {
 
-    margin-left: 15%;
-    margin-right: 15%;
+	margin-left: 15%;
+	margin-right: 15%;
 }
-    
+
 .column {
 	flex: 1;
 	padding: 20px;
 	text-align: center;
 }
-    
-    .column h2 {
-      color: #333;
-    }
+
+.column h2 {
+	color: #333;
+}
 
 
 /***Imagenes carousel***/
 
 #capturas_juego {
-  	background-color: #678983;
+	background-color: #678983;
 }
 
 .gallery {
@@ -300,68 +343,68 @@ details p {
 
 /***Sobre Nosotros***/
 
-	#sobre_nosotros{
-		padding-top: 10px ;
-		border-radius: 8px;
-		background-color: #F0E9D2;
-	}
+#sobre_nosotros {
+	padding-top: 10px;
+	border-radius: 8px;
+	background-color: #F0E9D2;
+}
 
-	#sobre_nosotros h3{
-      color: #678983;
-    }
+#sobre_nosotros h3 {
+	color: #678983;
+}
 
-    #sobre_nosotros .container{
-		margin-left:20%;
-		margin-right:20%;
-		margin-bottom:3%;
-		text-align: center;
+#sobre_nosotros .container {
+	margin-left: 20%;
+	margin-right: 20%;
+	margin-bottom: 3%;
+	text-align: center;
 
-	}
+}
 
-    
-    .about-us {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-    
-    .about-us img {
-		margin-top:20%;
-		margin-left: 20%;
-        width: 200px;
-        height: auto; 
-        
-    }
 
-    .team-members-container {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-    
-    .team-member {
-      width: 300px;
-      margin: 10px;
-      text-align: center;
-    }
-    
-    .team-member img {
-      width: 150px;
-      height: auto;
-      border-radius: 50%;
-      margin-bottom: 10px;
-    }
+.about-us {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.about-us img {
+	margin-top: 20%;
+	margin-left: 20%;
+	width: 200px;
+	height: auto;
+
+}
+
+.team-members-container {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.team-member {
+	width: 300px;
+	margin: 10px;
+	text-align: center;
+}
+
+.team-member img {
+	width: 150px;
+	height: auto;
+	border-radius: 50%;
+	margin-bottom: 10px;
+}
 
 
 /***Comentarios***/
 
-#comentarios{
+#comentarios {
 
-	padding-top: 10px ;
+	padding-top: 10px;
 	border-radius: 8px;
 	background-color: #678983;
 }
 
-.comentarios_contenido{
+.comentarios_contenido {
 	display: inline-flex;
 	justify-content: center;
 	margin-inline: 75px;
@@ -369,17 +412,17 @@ details p {
 	text-align: justify;
 }
 
-.comentarios{
+.comentarios {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
-	width:100%;
+	width: 100%;
 }
 
-.comentariosBloque{
+.comentariosBloque {
 	border-radius: 8px;
-	width:500px;
+	width: 500px;
 	box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
 	background-color: white;
 	padding: 20px;
@@ -390,12 +433,12 @@ details p {
 }
 
 /*****           FOOTER           *****/
-footer{
+footer {
 	background-color: pink;
 	padding: 15px;
 }
 
-footer p{
+footer p {
 	font-size: 0.75em;
 	margin-bottom: 0px;
 }
@@ -403,49 +446,70 @@ footer p{
 
 /*****       Versión para ordenadores      *****/
 
-@media screen and (min-width: 720px){
+@media screen and (min-width: 850px) {
 
-/*****      Header      *****/
+	/*****      Header      *****/
 
-#hamburguesa {
-	display: none;
-}
+	#hamburguesa {
+		display: none;
+	}
 
-header .container{
-	display: none;
-	flex-direction: row-reverse;
-	align-items: center;
-	justify-content: space-between;
-}
+	header .container {
+		display: none;
+		flex-direction: row-reverse;
+		align-items: center;
+		justify-content: space-between;
+	}
 
-header #menu{
-	display: flex;
-	flex-direction: row;
-	text-align: center;
-	padding: 10px;
-	background-color: transparent;
-	height: auto;
-}
+	header #menu {
+		display: flex;
+		flex-direction: row;
+		text-align: center;
+		padding: 10px;
+		background-color: transparent;
+		height: auto;
+	}
 
-/*****         DATOS PATROCINADORES         *****/
+	/*****         DATOS PATROCINADORES         *****/
+	#datos .caja_gif {
+		margin-top: 70px;
+		filter: drop-shadow(0px 2px 10px black);
+		margin-bottom: 30px;
+	}
+	
+	#datos .panel_gif {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.6);
+		color: #F0E9D2;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 20px;
+	}
+	
+	.panel_gif p {
+		text-align: center;
+		font-size: 30px;
+	}
 
-#datos .container {
-	width: 70%;
-  display: flex;
-  flex-direction: row;
+	#datos .container {
+		width: 70%;
+		display: flex;
+		flex-direction: row;
 
-	align-items: center;
-	justify-content: space-between;
+		align-items: center;
+		justify-content: space-between;
 
-}
+	}
 
-/*****         INFO GENERAL        *****/
-.columnas{
-	display: flex;
-	flex-direction: row;
-}
-
-}
-
+	/*****         INFO GENERAL        *****/
+	.columnas {
+		display: flex;
+		flex-direction: row;
+	}
 
 }
