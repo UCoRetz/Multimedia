@@ -4,7 +4,7 @@ var menu = document.getElementById("menu")
 
 btn.addEventListener('click', (e) =>{
 	if (menu.style.display == "none"){
-		menu.style.display = "flex"
+		menu.style.display = "grid"
 	} else{
 		menu.style.display = "none"
 	}
@@ -12,6 +12,7 @@ btn.addEventListener('click', (e) =>{
 });
 
 window.addEventListener('resize', () => {
+
   if (window.innerWidth > 850) {
     menu.style.display = "flex";
   } else{
@@ -22,3 +23,4 @@ window.addEventListener('resize', () => {
 document.querySelector(".enlace_patrocinar").addEventListener("click", function(){
 	window.location.href = "Patrocinar.html";	
 })
+

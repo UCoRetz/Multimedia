@@ -2,7 +2,9 @@
 	box-sizing: border-box; /* Decide el tamaño de las cajitas, puede tener 2 valores. Border box hace que el total de la caja sea lo que yo diga, mientras que box sizing hace que aparte del contenido se le suma la caja */
 }
 
-
+body{
+	margin: 0;				/* Le puse margin 0 porque sino dejaba un borde encima del header y esas cosas que quedan feo */
+}
 
 @font-face {
     font-family: upheaval;
@@ -29,12 +31,6 @@ h4{
 }
 
 
-
-body{
-	margin: 0;				/* Le puse margin 0 porque sino dejaba un borde encima del header y esas cosas que quedan feo */
-}
-
-
 section{
 	display: flex;
 	flex-direction: column;
@@ -56,61 +52,69 @@ button:active{
 
 /*****         HEADER         *****/
 
+header h3 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.5em;
+    color: #F0E9D2;
+}
+
 header{
-	position: fixed;
-	width: 100%;
-	background-color: rgba(0, 0, 26, 0.9); /*Azul*/
-	z-index: 1;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0, 0, 26, 0.9); /*Azul*/
+    z-index: 1;
 }
 
 header .container{
-	display: flex;					
-	flex-direction: column;
+    display: flex;                  
+    flex-direction: column;
 }
 
 header .barra{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 
 }
 
 header .logo{
-	display: flex;				/* Display determina como se relacionan elementos, en este caso row para que la imagen y el texto estén de seguido */
-	flex-direction: row;	
-	padding: 25px;				/* El padding lo centra y hace que no esté pegado a los bordes, pero sin hacer que el header tengo un hueco por arriba */
-	padding-top: 5px;
-	padding-bottom: 5px;
-	color: rgb #F0E9D2;
+    display: flex;              /* Display determina como se relacionan elementos, en este caso row para que la imagen y el texto estén de seguido */
+    flex-direction: row;    
+    padding: 25px;              /* El padding lo centra y hace que no esté pegado a los bordes, pero sin hacer que el header tengo un hueco por arriba */
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: rgb #F0E9D2;
 }
 
 header .imagen{
-	height: 50px;
-	width: 50px;
+    margin-top: 5px;
+    margin-right: 10px;
+    height: 50px;
+    width: 50px;
 }
 
 header #hamburguesa{
-	margin-top: 10px;
-	margin-right: 10px;
+    margin-right: 10px;
 }
 
-header nav{						
-	display: none	;
-	flex-direction: column;
-	text-align: center;
-	padding: 10px;
-	background-color: rgb(0, 0, 26);
-	height: 100vh;
+header nav{                     
+    display: none;
+    place-items: center;
+    padding: 10px;
+    background-color: rgb(0, 0, 26);
+    height: 100vh;
 }
 
 header a{
-	padding: 5px 10px;
-	text-decoration: none;
-	color: #E6DDC4;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #E6DDC4;
+    margin-bottom: 50px;
 }
 
 header a:hover{
-	color: #678983;
+    color: #678983;
 }
 
 /*****         DATOS         *****/
@@ -430,25 +434,28 @@ footer p{
 /*****      Header      *****/
 
 #hamburguesa {
-	display: none;
+    display: none;
 }
 
 header .container{
-	display: none;
-	flex-direction: row-reverse;
-	align-items: center;
-	justify-content: space-between;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
 }
 
 header #menu{
-	display: flex;
-	flex-direction: row;
-	text-align: center;
-	padding: 10px;
-	background-color: transparent;
-	height: auto;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding: 10px;
+    background-color: transparent;
+    height: auto;
 }
 
+header a{
+    margin-bottom: 0;
+}
 /*****         DATOS PATROCINADORES         *****/
 
 #datos .container {
