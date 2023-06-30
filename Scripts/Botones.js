@@ -12,7 +12,7 @@ btn.addEventListener('click', (e) =>{
 });
 
 window.addEventListener('resize', () => {
-  if (window.innerWidth >= 720) {
+  if (window.innerWidth > 850) {
     menu.style.display = "flex";
   } else{
   	menu.style.display = "none"
@@ -20,5 +20,5 @@ window.addEventListener('resize', () => {
 });
 
 document.querySelector(".enlace_patrocinar").addEventListener("click", function(){
-	window.location.href = "patrocinar.html";	
+	window.location.href = "Patrocinar.html";	
 })
