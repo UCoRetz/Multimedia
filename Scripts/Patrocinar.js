@@ -2,7 +2,14 @@ const fecha_max = new Date(2023, 6, 10);
 
 var pagado = 0;
 var audio = new Audio('Sounds/good.mp3');
+var recaudacion = document.getElementById("recaudacion");
 
+function actualizar(dinero){
+	pagado = dinero + parseInt(document.cookie.split('=')[1]);
+	document.cookie = "dinero=" + pagado + "; expires:" + fecha_max + ";";
+	console.log(document.cookie);
+	recaudacion.textContent = (reaudacion_base + parseInt(document.cookie.split('=')[1]));
+}
 
 var btn_5 = document.getElementById('btn_5');
 btn_5.addEventListener('click', (e) =>{
@@ -21,13 +28,6 @@ btn_50.addEventListener('click', (e) =>{
 	actualizar(50);
 	musica();
 })
-
-function actualizar(dinero){
-	pagado = dinero + parseInt(document.cookie.split('=')[1]);
-	document.cookie = "dinero=" + pagado + "; expires:" + fecha_max + ";";
-	console.log(document.cookie);
-	recaudacion.textContent = (reaudacion_base + parseInt(document.cookie.split('=')[1]));
-}
 
 function musica(){
 	audio.play();
