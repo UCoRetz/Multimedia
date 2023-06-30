@@ -1,4 +1,5 @@
 const fecha_max = new Date(2023, 6, 10);
+const recaudacion_base=2349;
 
 var pagado = 0;
 var audio = new Audio('Sounds/good.mp3');
@@ -8,7 +9,7 @@ function actualizar(dinero){
 	pagado = dinero + parseInt(document.cookie.split('=')[1]);
 	document.cookie = "dinero=" + pagado + "; expires:" + fecha_max + ";";
 	console.log(document.cookie);
-	recaudacion.textContent = (reaudacion_base + parseInt(document.cookie.split('=')[1]));
+	recaudacion.textContent = (recaudacion_base + parseInt(document.cookie.split('=')[1]));
 }
 
 var btn_5 = document.getElementById('btn_5');
