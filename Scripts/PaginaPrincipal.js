@@ -5,6 +5,7 @@ document.querySelector(".enlace_patrocinar").addEventListener("click", function(
 
 const patrocinadores_base=68;
 const advertencia="Esta pagina utiliza cookies, ¿quieres galletas?";
+const recaudacion_base=2349;
 
 const fecha_max = new Date(2023, 6, 10);	// el mes empieza en 0, entonces enero es 0 y diciembre 11. 6 es julio. La fecha es 10 de julio
 const fecha_actual = new Date();
