@@ -12,11 +12,15 @@ btn.addEventListener('click', (e) =>{
 });
 
 window.addEventListener('resize', () => {
-  if (window.innerWidth >= 850) {
+
+  if (window.innerWidth > 850) {
     menu.style.display = "flex";
   } else{
   	menu.style.display = "none"
   }
 });
 
+document.querySelector(".enlace_patrocinar").addEventListener("click", function(){
+	window.location.href = "Patrocinar.html";	
+})
 
