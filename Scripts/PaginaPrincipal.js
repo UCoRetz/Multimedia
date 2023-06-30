@@ -29,7 +29,7 @@ if (parseInt(document.cookie.split('=')[1]) > 1){
 	patrocinadores.textContent = (patrocinadores_base);
 }
 
-recaudacion.textContent = (reaudacion_base + parseInt(dinero.split('=')[1])) + " €";
+recaudacion.textContent = (recaudacion_base + parseInt(dinero.split('=')[1])) + " €";
 
 
 /* Cambio de la fecha */
