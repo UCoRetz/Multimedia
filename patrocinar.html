@@ -3,13 +3,12 @@
 
 <head>
 
-    <head>
-        <meta charset="utf-8">
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="Styles/patrocinar_estilo.css">
 
 
-        <title>Fondos</title>
+        <title>Patrocinar</title>
         <! -- Fuente Press Start 2P -->
             <link rel="preconnect" href="https://fonts.googleapis.com">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,29 +27,59 @@
                     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 
 
-    </head>
 </head>
 
 <body>
 
+<header>
+    <div class="container">
+
+        <div class="barra">
+            <div class="logo">
+                <img class="imagen" src="Images/Logo.png">
+                <h3>Bad Brains</h3>
+
+            </div>
+
+            <img class="imagen" id="hamburguesa" src="Images/Hamburguesa.png">
+
+        </div>
+
+        <nav id="menu">
+            <a href="index.html#datos">Inicio</a>
+            <a href="">Campaña</a>
+            <a href="">Sobre nosotros</a>
+            <a href="">FAQ</a>
+            <a href="">Comentarios</a>
+        </nav>  
+
+    </div>
+</header>
+
     <section id="recompensas">
         <div class="container">
+
             <h2>Nuestras Recompensas</h2>
             <div class="programas">
                 <div class="carta">
                     <h3>Recompensas 5$</h3>
-                    <p>-Una camiseta<br> <br>-Una Mochila</p>
-                    <button>Donar</button>
+                    <p id = "p_5">-Una camiseta<br> <br>-Una Mochila</p>
+                    <button class = "info" id = "info_5"> + Info</button>
+                    <button id = "btn_5">Donar</button>
                 </div>
+
                 <div class="carta">
                     <h3>Recompensas 25$</h3>
-                    <p>-Una camiseta<br> <br>-Una Mochila</p>
-                    <button>Donar</button>
+                    <p id = "p_25">-Una camiseta<br> <br>-Una Mochila</p>
+                    <button class = "info" id = "info_25"> + Info</button>
+                    <button id = "btn_25">Donar</button>
                 </div>
+
                 <div class="carta">
                     <h3>Recompensas 50$</h3>
-                    <p>-Una camiseta<br> <br>-Una Mochila</p>
-                    <button>Donar</button>
+                    <p id = "p_50">-Una camiseta<br> <br>-Una Mochila</p>
+                    <button class = "info" id = "info_50"> + Info</button>
+                    <button id = "btn_50">Donar</button>
                 </div>
             </div>
         </div>
@@ -63,5 +92,9 @@
         </p>
     </footer>
 </body>
+
+<script src="Scripts/Patrocinar.js"></script>
+<script src="Scripts/Botones.js"></script>
+
 
 </html>

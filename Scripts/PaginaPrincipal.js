@@ -1,12 +1,16 @@
-/*
-const reaudacion_base=2349;
+
+document.querySelector(".enlace_patrocinar").addEventListener("click", function(){
+	window.location.href = "patrocinar.html";	
+})
+
 const patrocinadores_base=68;
 const advertencia="Esta pagina utiliza cookies, ¿quieres galletas?";
+const recaudacion_base=2349;
 
 const fecha_max = new Date(2023, 6, 10);	// el mes empieza en 0, entonces enero es 0 y diciembre 11. 6 es julio. La fecha es 10 de julio
 const fecha_actual = new Date();
 
-/*  *//*
+/*  */
 
 var recaudacion = document.getElementById("recaudacion");
 var patrocinadores = document.getElementById("patrocinadores");
@@ -26,15 +30,14 @@ if (parseInt(document.cookie.split('=')[1]) > 1){
 	patrocinadores.textContent = (patrocinadores_base);
 }
 
-recaudacion.textContent = (reaudacion_base + parseInt(dinero.split('=')[1])) + " €";
+recaudacion.textContent = (recaudacion_base + parseInt(dinero.split('=')[1])) + " €";
 
 
-/* Cambio de la fecha *//*
+/* Cambio de la fecha */
 
 var quedan = fecha_max - fecha_actual;						// resultado en milisegundos
 quedan = quedan / (1000 * 60 * 60 * 24);					// quedan / 1000 es el resultado en segundos, despues /60 para minutos, /60 para horas 
 															// y /24 porque el dia tiene 24h, así tenemos el resultado en segundos
 dias_restantes.textContent = Math.ceil(quedan) + " dias"; 	// redondeamos hacia abajo
 
-*/
 
