@@ -126,6 +126,10 @@ header a:hover{
 
 }
 
+video { 
+width: 90%;
+height: auto;
+ }
 
 /*****         DATOS         *****/
 
@@ -481,6 +485,11 @@ footer p {
 /*****       Versión para ordenadores      *****/
 
 @media(min-width: 850px){
+
+video{
+	width: 700px;
+    height: auto;
+}
 
 p{
 	font-size: 0.65em;
