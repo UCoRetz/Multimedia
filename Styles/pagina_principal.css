@@ -131,6 +131,7 @@ header a:hover{
 
 #datos {
 	padding: 20px;
+	padding-top: 40px;
 	background-color: #678983;
 }
 
@@ -151,13 +152,20 @@ header a:hover{
 
 .panel_gif a{
 	text-decoration: none;
+	padding: 15px;
+	border: 3px #678983; 
+	border-radius: 4px;
+	background-color: #678983;
 	color: #F0E9D2;
 }
 
 .panel_gif a:hover{
-    color: #678983;
-
+	border-color: #678983;
+    background-color: #678983;
+  	box-shadow: 2px -2px 0px  rgba(0, 0, 0, 1);
+  	transform: translateY(2px);
 }
+
 
 #datos .panel_gif {
 	position: absolute;
