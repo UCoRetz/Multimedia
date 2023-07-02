@@ -1,7 +1,10 @@
+/*		Estilos genericos		*/
+
 * {
 	box-sizing: border-box;
 	scroll-behavior: smooth;
-	/* Decide el tamaño de las cajitas, puede tener 2 valores. Border box hace que el total de la caja sea lo que yo diga, mientras que box sizing hace que aparte del contenido se le suma la caja */
+	font-family: 'Press Start 2P', cursive;
+
 }
 
 body{
@@ -9,36 +12,29 @@ body{
 }
 
 a {
-	font-family: 'Press Start 2P', cursive;
 	font-size: 0.6em;
 }
 
 p {
-    font-family: 'Press Start 2P', cursive;
     font-size: 0.5em;
     line-height: 2;
 }
 
 strong{
-	font-family: 'Press Start 2P', cursive;
 	font-size: 0.6em;
 }
 
 h2 {
-	font-family: 'Press Start 2P', cursive;
 	font-size: 20px;
 }
 
 h3 {
-	font-family: 'Press Start 2P', cursive;
 
 	color: #F0E9D2;
 	font-size: 30px;
 }
 
-
 h4 {
-	font-family: 'Press Start 2P', cursive;
 	color: #678983;
 	font-size: 18px;
 }
