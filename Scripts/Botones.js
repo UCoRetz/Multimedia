@@ -4,11 +4,17 @@ var menu = document.getElementById("menu")
 
 btn.addEventListener('click', (e) =>{
 	if (menu.style.display == "none"){
-		menu.style.display = "grid"
+		menu.style.display = "flex"
 	} else{
 		menu.style.display = "none"
 	}
 
+});
+
+window.addEventListener('scroll', function() {
+	if (window.innerWidth < 850){
+		menu.style.display = "none"
+	}
 });
 
 window.addEventListener('resize', () => {

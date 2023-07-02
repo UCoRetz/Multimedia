@@ -1,5 +1,6 @@
 * {
 	box-sizing: border-box;
+	scroll-behavior: smooth;
 	/* Decide el tamaño de las cajitas, puede tener 2 valores. Border box hace que el total de la caja sea lo que yo diga, mientras que box sizing hace que aparte del contenido se le suma la caja */
 }
 
@@ -7,9 +8,20 @@ body{
 	margin: 0;				/* Le puse margin 0 porque sino dejaba un borde encima del header y esas cosas que quedan feo */
 }
 
-@font-face {
-	font-family: upheaval;
-	src: url('Fonts/upheavtt.ttf');
+a {
+	font-family: 'Press Start 2P', cursive;
+	font-size: 0.6em;
+}
+
+p {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.5em;
+    line-height: 2;
+}
+
+strong{
+	font-family: 'Press Start 2P', cursive;
+	font-size: 0.6em;
 }
 
 h2 {
@@ -31,7 +43,6 @@ h4 {
 	font-size: 18px;
 }
 
-
 section{
 	display: flex;
 	flex-direction: column;
@@ -47,16 +58,13 @@ button:active {
 }
 
 .container {
-	max-width: 1400px;
-	/* Una vez se pase de 1400 pixeles se ira centrando (poniendo margenes automaticos) para que no se pegue al borde*/
+	max-width: 1400px;	/* Una vez se pase de 1400 pixeles se ira centrando (poniendo margenes automaticos) para que no se pegue al borde*/
 	margin: auto;
 }
 
 /*****         HEADER         *****/
 
-
 header h3 {
-    font-family: 'Press Start 2P', cursive;
     font-size: 1.5em;
     color: #F0E9D2;
 }
@@ -102,18 +110,19 @@ header #hamburguesa{
 }
 
 header nav{                     
-    display: none;
-    place-items: center;
-    padding: 10px;
-    background-color: rgb(0, 0, 26);
-    height: 100vh;
+	display: none;
+  	flex-direction: column;
+  	align-items: center;
+  	height: 100vh;
+  	background-color: rgb(0, 0, 26);
+  	
 }
 
 header a{
     padding: 5px 10px;
     text-decoration: none;
     color: #E6DDC4;
-    margin-bottom: 50px;
+    margin: 40px;
 }
 
 header a:hover{
@@ -193,18 +202,16 @@ header a:hover{
 	background-color: #F0E9D2;
 }
 
-.campana_contenido img {
-	width: 40%;
-	height: auto;
-	filter: drop-shadow(0px 2px 10px black);
-	margin-bottom: 10px;
-	margin-top: 15px;
-	margin-left: 30%; /*tarso, #campana img sin margin-left*/
+#campana img {
+  	width: 80%;
+    height: auto;
+    filter: drop-shadow(0px 2px 10px black);
+    margin-bottom: 10px;
+    margin-top: 15px;
 
 }
 
 .columnas {
-
 	margin-left: 15%;
 	margin-right: 15%;
 }
@@ -219,15 +226,13 @@ header a:hover{
 	color: #333;
 }
 
-.campana_texto {
-	margin-left: 30px;
-	margin-right: 30px;
-	text-align: justify;
+#capturas_juego {
+  	background-color: #678983;
 }
 
 #capturas_juego p{
-		margin-left: 25px;
-		margin-right: 25px;
+	margin-left: 8%;
+	margin-right: 8%;
     text-align: justify;
 
 }
@@ -236,8 +241,8 @@ header a:hover{
   	width: 80%;
     height: auto;
     filter: drop-shadow(0px 2px 10px black);
-    margin-bottom: 10px;
-    margin-top: 15px;
+    margin-bottom: 30px;
+    margin-top: 30px;
     
 }
 
@@ -245,6 +250,7 @@ header a:hover{
 
 #preguntas_frecuentes h3{
       color: #678983;
+      text-align: center;
     }
 
 #preguntas_frecuentes{ /*Contorno*/
@@ -283,8 +289,9 @@ header a:hover{
 }
 
 details summary {
-	font-weight: 100;
-	font-size: 1.25rem;
+	font-family: 'Press Start 2P', cursive;
+    font-size: 0.6em;
+    line-height: 2;
 	padding: 1rem;
 	cursor: pointer;
 	list-style: none;
@@ -307,6 +314,7 @@ details p {
 #informacion_general {
 	background-color: #678983;
 	width: 100%;
+	text-align: center;
 }
 
 .campana_contenido img {
@@ -335,34 +343,6 @@ details p {
 	color: #333;
 }
 
-
-/***Imagenes***/
-
-#capturas_juego {
-  	background-color: #678983;
-}
-
-.gallery {
-	margin-bottom: 20px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.gallery img {
-	display: none;
-}
-
-.gallery img:first-child {
-	display: block;
-}
-
-.gallery img.active {
-	display: block;
-}
-
-
-
 /***Sobre Nosotros***/
 
 #sobre_nosotros {
@@ -380,7 +360,6 @@ details p {
 	margin-right: 20%;
 	margin-bottom: 3%;
 	text-align: center;
-
 }
 
 
@@ -390,7 +369,7 @@ details p {
 }
 
 .about-us img {
-	margin-top: 20%;
+	margin-top: 10%;
 	margin-left: 20%;
 	width: 200px;
 	height: auto;
@@ -452,7 +431,6 @@ details p {
 	margin: 15px;
 	background-color: #F0E9D2;
 
-
 }
 
 /*****           FOOTER           *****/
@@ -462,15 +440,18 @@ footer {
 }
 
 footer p {
-	font-size: 0.75em;
+	font-size: 0.4em;
 	margin-bottom: 0px;
 }
 
 
 /*****       Versión para ordenadores      *****/
 
-@media screen and (min-width: 850px){
+@media(min-width: 850px){
 
+p{
+	font-size: 0.65em;
+}
 /*****      Header      *****/
 
 #hamburguesa {
@@ -494,7 +475,7 @@ header #menu{
 }
 
 header a{
-    margin-bottom: 0;
+	margin: 0;
 }
 /*****         DATOS PATROCINADORES         *****/
 
@@ -550,6 +531,10 @@ header a{
 		display: flex;
 		flex-direction: row;
 	}
+
+.comentariosBloque {
+	width:600px;
+}
 
 /******* Imagenes ******/
 
