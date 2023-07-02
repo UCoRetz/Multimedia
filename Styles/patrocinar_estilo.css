@@ -171,6 +171,27 @@ header a:hover{
             rgba(103, 137, 131, 1)), url("media/front-end.jpg");
 }
 
+#img_5 {
+    display: none;
+    height: 150px;
+    width: auto;
+}
+
+#img_25 {
+    display: none;
+    height: 150px;
+    width: auto;
+    margin-bottom: 15px;
+}
+
+#img_50 {
+    display: none;
+    height: 150px;
+    width: auto;
+    margin-bottom: 30px;
+}
+
+
 /*      FOOTER      */
 
 footer {
@@ -234,6 +255,7 @@ header a{
 }
 
 #recompensas .carta {
+    max-width: 600px;
     padding: 50px;
     background-size: 100% 150px;
     background-repeat: no-repeat;
@@ -245,5 +267,23 @@ header a{
     #recompensas .info{
         display: none;
     }
+
+#img_5 {
+    display: inline;
+    height: 150px;
+    width: auto;
+}
+
+#img_25 {
+    display: inline;
+    height: 200px;
+    width: auto;
+}
+
+#img_50 {
+    display: inline;
+    height: 200px;
+    width: auto;
+}
 
 }
